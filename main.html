@@ -1,0 +1,25 @@
+<script>
+    function Restaurant(cash,seat,staffList){
+        this.cash=cash;
+        this.seat=seat;
+        this.staffList=staffList;
+    }
+// var ifeRestaurant = new Restaurant({
+//     cash: 1000000,
+//     seats: 20,
+//     staff: []
+// });
+var ifeRestaurant = new Restaurant(1000000,20,[]);
+console.log(ifeRestaurant);
+function Restaurant1(jsonList){
+        for(var item in jsonList) {  
+            this[item]=jsonList[item];
+        } 
+};
+var ifeRestaurant1 = new Restaurant1({
+    cash: 1000000,
+    seats: 20,
+    staff: []
+});
+console.log(ifeRestaurant1);
+</script>
